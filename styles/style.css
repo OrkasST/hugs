@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
+    
+    font-family: "Great Vibes", cursive;
 }
 
 
@@ -16,6 +18,10 @@
 
     background: #c379b9;
 }
+.top h2 {
+    font-size: 26px;
+}
+
 .mainHeader {
     height: 5vw;
 
@@ -34,7 +40,8 @@
 
     position: relative;
     left: 50%;
-    transform: translate(-50%, -4vw);
+    margin-top: -2rem;
+    transform: translate(-50%);
 
     background: #fff;
 
@@ -42,6 +49,7 @@
     border-radius: 2rem;
     box-shadow: 0 0 2vw 0.8vw rgba(45, 45, 45, 0.2);
 }
+
 .dayTime {
     margin-bottom: 1.4vw;
     min-width: 20vw;
@@ -58,11 +66,44 @@
 
 .dateField {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     margin-top: 3rem;
     min-width: 45vw;
 }
-.toDate{
+
+.toDate {
     margin-left: 2rem;
+}
+
+.results {
+    width: 60vw;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+    margin-top: 4vw;
+    padding: 2vw;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 2vw 0.8vw rgba(45, 45, 45, 0.2);
+}
+.results div {
+    width: 10rem;
+    height: 3rem;
+    border: solid 1px #7a7676;
+    border-radius: 0.8rem;
+    margin-left: 5vw;
+}
+.actionButton {
+    width: 8rem;
+    height: 3rem;
+    background-color: #f2efef;
+    border-radius: 1rem;
+    border: solid 1px #c379b9;
+}
+.actionButton:hover {
+    background-color: #cf84c9;
 }
