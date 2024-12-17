@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    width: 100vw;
+    height: 18vw;
+
+    background: #c379b9;
+}
+.mainHeader {
+    height: 5vw;
+
+    text-align: center;
+}
+
+.Configure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4vw 1vw;
+
+    width: 80vw;
+    min-height: 15vw;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -4vw);
+
+    background: #fff;
+
+    /* border: solid 1px #000; */
+    border-radius: 2rem;
+    box-shadow: 0 0 2vw 0.8vw rgba(45, 45, 45, 0.2);
+}
+.dayTime {
+    margin-bottom: 1.4vw;
+    min-width: 20vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.number {
+    width: 3rem;
+    min-height: 1.2rem;
+    text-align: center;
+    margin-left: 1.5rem;
+}
+
+.dateField {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 3rem;
+    min-width: 45vw;
+}
+.toDate{
+    margin-left: 2rem;
+}
