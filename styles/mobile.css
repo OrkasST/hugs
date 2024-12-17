@@ -1,0 +1,12 @@
+@media (max-width: 500px) {
+    * {
+        font-size: 22px;
+    }
+
+    .dateField {
+        flex-direction: column;
+    }
+    .toDate{
+        margin-left: 0;
+    }
+}
