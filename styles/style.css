@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 24px;
     
     font-family: "Great Vibes", cursive;
 }
@@ -72,6 +72,10 @@
     min-width: 45vw;
 }
 
+.dateField input {
+    margin-left: 0.5rem;
+}
+
 .toDate {
     margin-left: 2rem;
 }
@@ -106,4 +110,10 @@
 }
 .actionButton:hover {
     background-color: #cf84c9;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

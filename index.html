@@ -26,24 +26,30 @@
       </div>
       <div class="dayTime" id="night">
         <input id="night_chk" class="checkBox" type="checkbox">Ночь
-        <input type="number" class="number" value="8" disabled="">
+        <input type="number" class="number" value="0" disabled="">
       </div>
       <div class="dayTime" id="morning">
         <input id="morning_chk" class="checkBox" type="checkbox">Утро
-        <input type="number" class="number" value="8" disabled="">
+        <input type="number" class="number" value="0" disabled="">
       </div>
       <div class="dayTime" id="evening">
         <input id="evening_chk" class="checkBox" type="checkbox">Вечер
-        <input type="number" class="number" value="8" disabled="">
+        <input type="number" class="number" value="0" disabled="">
       </div>
       <div id="date" class="dateField">
-        <div class="fromDate">От: <input id="from" type="date"></div>
-        <div class="toDate">до: <input id="to" type="date"></div>
+        <div class="fromDate">От: 
+          <input id="from_date" type="date">
+          <input id="from_time" type="time">
+        </div>
+        <div class="toDate">до: 
+          <input id="to_date" type="date">
+          <input id="to_time" type="time">
+        </div>
       </div>
     </form>
     <div class="results">
       <button id="count" class="actionButton">Подсчитать</button>
-      <div id="resultScreen"></div>
+      <div class="screen"><span id="resultScreen"></span></div>
     </div>
   </main>
   <script src="./scripts/main.js" type="module"></script>
