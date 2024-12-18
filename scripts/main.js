@@ -47,6 +47,11 @@ toTime.addEventListener("input", () => {
 })
 
 
+function checkReliability(obj) {
+  if (obj.disabled) return 0
+  return parseInt(obj.value)
+}
+
 sumBtn.addEventListener("click", () => {
   if (isFromDateset && isFromTimeSet &&
     isToDateset && isToTimeSet && !checkboxes.every(input => input[1].isDisabled)) {
@@ -62,10 +67,10 @@ sumBtn.addEventListener("click", () => {
       .join(".")
       + "."+toTime.value.split(":").join(".")
 
-    let hugs_per_day = parseInt(day[1].value)
-    + parseInt(night[1].value)
-    + parseInt(morning[1].value)
-    + parseInt(evening[1].value);
+    let hugs_per_day = checkReliability(day[1])
+    + checkReliability(night[1])
+    + checkReliability(morning[1])
+    + checkReliability(evening[1]);
 
     let [hours, mins] = count_hugs([date_from, date_to], hugs_per_day)
     resultScreen.innerHTML = hours > 0 && mins > 0 ? `<b>${hours}ч ${mins}мин</b> обнимашек :)` : "Нет обнимашек :("
