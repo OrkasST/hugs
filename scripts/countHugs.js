@@ -87,7 +87,7 @@ export function count_hugs(date, hugs_per_day) {
     }
     console.log('days: ', days);
 
-    let hugs = days * 4 * hugs_per_day
+    let hugs = days * hugs_per_day
     let hours = parseInt(Math.floor(hugs / 60))
     let mins = parseInt(hugs % 60)
 
